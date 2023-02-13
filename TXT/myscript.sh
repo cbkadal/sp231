@@ -5,7 +5,7 @@
 # useful, but WITHOUT ANY WARRANTY; without even the implied 
 # warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-# REV29: Mon 13 Feb 2023 13:00
+# REV29: Mon 13 Feb 2023 13:30
 # REV19: Sun 05 Feb 2023 20:00
 # REV11: Sun 08 May 2022 06:00
 # REV08: Sun 13 Mar 2022 23:00
@@ -77,7 +77,7 @@ case "$response" in
         ;;
     *)
         echo "It is not Week $WEEK!"
-        exit 1
+        usage
         ;;
 esac
 
