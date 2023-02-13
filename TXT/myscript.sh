@@ -1,17 +1,14 @@
 #!/bin/bash
 # Copyright (C) 2020-2023 Cicak Bin Kadal
 
-WEEK="00"
-
 # This free document is distributed in the hope that it will be 
 # useful, but WITHOUT ANY WARRANTY; without even the implied 
 # warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-# REV29: Mon 13 Feb 2023 08:38:11 WIB
+# REV29: Mon 13 Feb 2023 13:00
 # REV19: Sun 05 Feb 2023 20:00
 # REV11: Sun 08 May 2022 06:00
 # REV08: Sun 13 Mar 2022 23:00
-# REV04: Sat 20 Nov 2021 19:00
 # REV02: Sun 19 Sep 2021 15:00
 # START: Mon 28 Sep 2020 21:00
 
@@ -99,7 +96,7 @@ for II in W?? ; do
 done
 popd
 
-if [[ "$WEEK" != "W00" ]] && [[ "$WEEK" != "W01" ]] ; then
+if [[ "$WEEK" != "W00" ]] ; then
     II="${RESDIR}my$WEEK.tar.bz2.asc"
     echo "Check and move $II..."
     [ -f $II ] && mv -vf $II .
